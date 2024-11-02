@@ -1,0 +1,7 @@
+loader_10.09.jpeg
+size:604,604
+filter:Linear,Linear
+1
+bounds:2,2,300,600
+Chest
+bounds:304,454,179,148
