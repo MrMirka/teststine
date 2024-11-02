@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="ad.size" content="width=300,height=250">
+    <title>Loader</title>
+    <link rel="stylesheet" href="https://unpkg.com/@esotericsoftware/spine-player@4.2.*/dist/spine-player.css">
+</head>
+<body>
+    <a id="click_area" href="#" target="_blank">
+        <div id="player-container" style="width: 100%; height: 100vh;"></div>
+    </a>
+
+    <script src="https://unpkg.com/@esotericsoftware/spine-player@4.2.*/dist/iife/spine-player.js"></script>
+    <script>
+        new spine.SpinePlayer("player-container", {
+            skeleton: "loader_10.09.json",
+            atlas: "https://drive.google.com/uc?export=download&id=1fQIfeQAm7-a6Fc-ySbXbYS_GeGdhTDp0",
+            animation: "animation",
+            showControls: false,
+            loop: true,
+            premultipliedAlpha: true,
+            autoplay: true
+        });
+
+        document.getElementById("click_area").href = yandexHTML5BannerApi.getClickURLNum(1);
+    </script>
+</body>
+</html>
